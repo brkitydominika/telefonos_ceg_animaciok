@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(16, 16, 43);
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 20% 1fr 15%;
+    grid-gap: 30px;
+    height: 100vh;
+    margin: 0;
+}
+
+#head {
+    grid-area: header;
+}
+#foot {
+    grid-area: footer;
+}
+#main { 
+    grid-area: main;  
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+#nav { 
+    grid-area: nav; 
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav p{
+    color: white;
+    text-align: center;
+}
+
+.tablet{
+  height: 20vw;
+  width: 20vw;
+  transition: 0.5s;
+}
+
+.tablet:hover{
+    height: 30vw;
+    width: 30vw;
+}
+
+.telefon{
+    height: 20vw;
+    width: 20vw;
+    transition: 0.5s;
+}
+
+.telefon:hover{
+    height: 30vw;
+    width: 30vw;
+}
+
+.logo{
+    height: 10vw;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+#head p{
+    text-align: center;
+}
+
